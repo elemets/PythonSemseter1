@@ -1,0 +1,50 @@
+GET /Forms.html
+
+<html>
+<link rel="stylesheet" href="styles.css">
+<body class="bg-class">
+<form action="welcome.php" method="post">
+Name: <input type="text" name="name"><br>
+email: <input type="email" name="email">
+<input type="submit"> 
+</form>
+</body>
+</html>
+Connection closed by foreign host.
+
+This has retrieved the html of the Forms.html file and written out the code to the console.
+
+GET /
+
+<html>
+<head>
+<title>
+poone
+</title>
+</head>
+<body>
+<?php
+echo "Hello world\n";
+?>
+<h1>My Man</h1>
+</body>
+</html>Connection closed by foreign host.
+
+This has taken the html file which is being displayed by the webserver and returns the html or code for it (typically this si the index.html file)
+
+
+GET /man.html
+
+<head>
+<title>Error response</title>
+</head>
+<body>
+<h1>Error response</h1>
+<p>Error code 404.
+<p>Message: File not found.
+<p>Error code explanation: 404 = Nothing matches the given URI.
+</body>
+Connection closed by foreign host.
+
+
+Here we get the error html which will return an error page written in html
